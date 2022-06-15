@@ -8,6 +8,10 @@ const GlobalStyles = createGlobalStyle`
     font-family: Noto Sans KR;
   }
 
+  a {
+    text-decoration:none;
+  }
+
   * {
       box-sizing:border-box;
       outline:none;
