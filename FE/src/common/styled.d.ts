@@ -1,6 +1,6 @@
 import 'styled-components';
 
-declare module 'styled-component' {
+declare module 'styled-components' {
   export interface DefaultTheme {
     fontSizes: {
       xs: '0.75rem';
