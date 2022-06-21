@@ -1,6 +1,6 @@
 import * as S from './TextArea.styled';
 
-function TextArea({ active }: { active: boolean }) {
+export function TextArea({ active }: { active: boolean }): JSX.Element {
   return (
     <S.Form active={active}>
       <S.TextArea
@@ -24,5 +24,3 @@ function TextArea({ active }: { active: boolean }) {
     </S.Form>
   );
 }
-
-export default TextArea;
