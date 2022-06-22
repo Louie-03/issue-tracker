@@ -5,7 +5,7 @@ function Filter() {
     <S.Filter>
       <S.FilterBar>
         <p>필터</p>
-        <img src="./filterIcon.svg" alt="filterIcon" />
+        <img src="icons/filterIcon.svg" alt="filterIcon" />
       </S.FilterBar>
       <S.SearchForm type="text" />
     </S.Filter>
