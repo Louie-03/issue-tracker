@@ -103,6 +103,7 @@ const handleColorType = (theme: DefaultTheme, color: string): string => {
 export const TextStyles = css<{
   fontWeight: string;
   fontSize: string;
+<<<<<<< HEAD
   lineheight: string;
   color: string;
 }>`
@@ -110,6 +111,15 @@ export const TextStyles = css<{
     font-weight: ${handleFontWeightType(theme, fontWeight)};
     font-size: ${handleFontSizeType(theme, fontSize)};
     line-height: ${handleLineHeightType(theme, lineheight)};
+=======
+  lineHeight: string;
+  color: string;
+}>`
+  ${({ theme, fontWeight, fontSize, lineHeight, color }) => css`
+    font-weight: ${handleFontWeightType(theme, fontWeight)};
+    font-size: ${handleFontSizeType(theme, fontSize)};
+    line-height: ${handleLineHeightType(theme, lineHeight)};
+>>>>>>> 655a1dd8c6efa1753bc10a5273b5ceec1a86cb66
     color: ${handleColorType(theme, color)};
   `}
 `;

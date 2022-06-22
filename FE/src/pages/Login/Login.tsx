@@ -1,11 +1,18 @@
+<<<<<<< HEAD
 import React from 'react';
 
+=======
+>>>>>>> 655a1dd8c6efa1753bc10a5273b5ceec1a86cb66
 import { GitHubBtn } from './Login.styled';
 import * as S from './Login.styled';
 
 const URL = `https://github.com/login/oauth/authorize?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&scope=read:user&redirect_uri=${process.env.REACT_APP_GITHUB_REDIRECT_URI}`;
 
+<<<<<<< HEAD
 function Login(): JSX.Element {
+=======
+export function Login(): JSX.Element {
+>>>>>>> 655a1dd8c6efa1753bc10a5273b5ceec1a86cb66
   return (
     <S.Container>
       <S.Wrapper>
@@ -18,7 +25,11 @@ function Login(): JSX.Element {
         <S.OR
           fontWeight="bold"
           fontSize="sm"
+<<<<<<< HEAD
           lineheight="short"
+=======
+          lineHeight="short"
+>>>>>>> 655a1dd8c6efa1753bc10a5273b5ceec1a86cb66
           color="placeholder"
         >
           OR
@@ -32,7 +43,11 @@ function Login(): JSX.Element {
           to="/"
           fontWeight="bold"
           fontSize="xs"
+<<<<<<< HEAD
           lineheight="shorter"
+=======
+          lineHeight="shorter"
+>>>>>>> 655a1dd8c6efa1753bc10a5273b5ceec1a86cb66
           color="body"
         >
           회원가입
@@ -41,4 +56,7 @@ function Login(): JSX.Element {
     </S.Container>
   );
 }
+<<<<<<< HEAD
 export default Login;
+=======
+>>>>>>> 655a1dd8c6efa1753bc10a5273b5ceec1a86cb66

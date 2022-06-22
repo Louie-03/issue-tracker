@@ -20,6 +20,11 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'import'],
   rules: {
+<<<<<<< HEAD
+=======
+    'jsx-a11y/label-has-associated-control': 'off',
+    'react/react-in-jsx-scope': 'off',
+>>>>>>> 655a1dd8c6efa1753bc10a5273b5ceec1a86cb66
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'import/prefer-default-export': 0,
     'prettier/prettier': 0,
@@ -29,7 +34,10 @@ module.exports = {
     'import/no-extraneous-dependencies': 0,
     'no-shadow': 0,
     'react/prop-types': 0,
+<<<<<<< HEAD
     'react/react-in-jsx-scope': 0,
+=======
+>>>>>>> 655a1dd8c6efa1753bc10a5273b5ceec1a86cb66
     'react/jsx-filename-extension': [
       2,
       {

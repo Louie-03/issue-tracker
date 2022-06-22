@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
+=======
+    "baseUrl": "src",
+>>>>>>> 655a1dd8c6efa1753bc10a5273b5ceec1a86cb66
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -14,7 +18,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+<<<<<<< HEAD
     "jsx": "react-jsx"
+=======
+    "jsx": "react-jsx",
+    "paths": {
+      "@components/*": ["components/*"]
+    }
+>>>>>>> 655a1dd8c6efa1753bc10a5273b5ceec1a86cb66
   },
   "include": ["src"]
 }

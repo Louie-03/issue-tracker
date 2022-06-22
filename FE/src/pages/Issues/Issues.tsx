@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
+<<<<<<< HEAD
 import Header from '../../component/Header';
 import * as S from './Issues.styled';
 import Filter from './Filter';
@@ -9,6 +10,10 @@ import IssueHeader from './IssueHeader';
 import Issue from './Issue';
 
 function Issues() {
+=======
+
+export function Issues(): JSX.Element {
+>>>>>>> 655a1dd8c6efa1753bc10a5273b5ceec1a86cb66
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
@@ -25,6 +30,7 @@ function Issues() {
       // console.log(githubAPI);
     })();
   }, []);
+<<<<<<< HEAD
 
   return (
     <div>
@@ -45,3 +51,7 @@ function Issues() {
   );
 }
 export default Issues;
+=======
+  return <div />;
+}
+>>>>>>> 655a1dd8c6efa1753bc10a5273b5ceec1a86cb66

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 module.exports = {
   "stories": [
     "../src/**/*.stories.mdx",
@@ -14,3 +15,32 @@ module.exports = {
     "builder": "@storybook/builder-webpack5"
   }
 }
+=======
+const path = require('path');
+
+module.exports = {
+  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
+  addons: [
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-interactions',
+    '@storybook/preset-create-react-app',
+  ],
+  framework: '@storybook/react',
+  core: {
+    builder: '@storybook/builder-webpack5',
+  },
+  webpackFinal: async config => {
+    config.resolve.modules = [
+      path.resolve(__dirname, '..'),
+      'node_modules',
+      'styles',
+    ];
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@components': path.resolve(__dirname, '../src/components'),
+    };
+    return config;
+  },
+};
+>>>>>>> 655a1dd8c6efa1753bc10a5273b5ceec1a86cb66

@@ -1,9 +1,15 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+<<<<<<< HEAD
 import { BtnStyles, CustomBtn } from '../../common/button.styled';
 import { TextStyles } from '../../common/text.styled';
 import { FlexCenterSorter, InputBase } from '../../common/util.styled';
+=======
+import { BtnStyles, CustomBtn } from 'common/button.styled';
+import { TextStyles } from 'common/text.styled';
+import { FlexCenterSorter, InputBase } from 'common/util.styled';
+>>>>>>> 655a1dd8c6efa1753bc10a5273b5ceec1a86cb66
 
 export const Container = styled.div`
   width: 100vw;
