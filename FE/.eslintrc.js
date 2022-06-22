@@ -29,6 +29,7 @@ module.exports = {
     'import/no-extraneous-dependencies': 0,
     'no-shadow': 0,
     'react/prop-types': 0,
+    'react/react-in-jsx-scope': 0,
     'react/jsx-filename-extension': [
       2,
       {
