@@ -1,8 +1,8 @@
 import axios from 'axios';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
-function Issues(): JSX.Element {
+export function Issues(): JSX.Element {
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
@@ -21,4 +21,3 @@ function Issues(): JSX.Element {
   }, []);
   return <div />;
 }
-export default Issues;
