@@ -1,6 +1,5 @@
-import { TextArea } from 'common/TextArea';
-import { AAA } from './NewIssue.styled';
+import { NewIssueForm } from 'common/NewIssueForm/NewIssueForm';
 
-export function NewIssue(): JSX.Element {
-  return <TextArea active />;
+export function NewIssue() {
+  return <NewIssueForm isTitle={false} isActive={false} />;
 }

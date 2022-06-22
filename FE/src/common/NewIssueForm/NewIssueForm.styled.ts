@@ -1,7 +1,39 @@
 import styled, { css } from 'styled-components';
 import { TextStyles } from '../text.styled';
 
-export const Form = styled.form<{ active: boolean }>`
+export const Title = styled.input<{
+  fontWeight: string;
+  fontSize: string;
+  lineHeight: string;
+  color: string;
+  isActive: boolean;
+  isTitle: boolean;
+}>`
+  border-radius: 16px;
+  background-color: ${({ theme: { colors } }) => colors.inputBackground};
+
+  ${({ theme: { colors }, isActive }) =>
+    isActive &&
+    css`
+      &[type='text'] {
+        background-color: ${colors.offWhite};
+        border: 1px solid ${colors.titleActive};
+      }
+    `}
+
+  ${({ isTitle }) =>
+    isTitle
+      ? css`
+          display: block;
+          ${TextStyles}
+          width: 340px;
+        `
+      : css`
+          display: none;
+        `}
+`;
+
+export const Form = styled.form<{ isActive: boolean }>`
   width: 340px;
   height: 200px;
   display: flex;
@@ -9,8 +41,8 @@ export const Form = styled.form<{ active: boolean }>`
   border-radius: 16px;
   background-color: ${({ theme: { colors } }) => colors.inputBackground};
 
-  ${({ theme: { colors }, active }) =>
-    active &&
+  ${({ theme: { colors }, isActive }) =>
+    isActive &&
     css`
       background-color: ${colors.offWhite};
       border: 1px solid ${colors.titleActive};
@@ -22,7 +54,7 @@ export const TextArea = styled.textarea<{
   fontSize: string;
   lineHeight: string;
   color: string;
-  active: boolean;
+  isActive: boolean;
 }>`
   ${TextStyles}
   padding: 16px 24px;
@@ -36,8 +68,8 @@ export const TextArea = styled.textarea<{
     border-bottom: 1px dashed ${colors.titleActive};
   `};
 
-  ${({ theme: { colors }, active }) =>
-    active &&
+  ${({ theme: { colors }, isActive }) =>
+    isActive &&
     css`
       background-color: ${colors.offWhite};
     `}
