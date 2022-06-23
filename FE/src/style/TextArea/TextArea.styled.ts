@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { TextStyles } from '../text.styled';
+import { TextStyles } from '../../common/text.styled';
 
 export const Form = styled.form<{ active: boolean }>`
   width: 340px;

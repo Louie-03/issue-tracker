@@ -17,7 +17,7 @@ function TextArea({ active }: { active: boolean }) {
         lineHeight="shorter"
         color="label"
       >
-        <S.LabelImg src="./Icons.svg" alt="파일 첨부" />
+        <S.LabelImg src="./icons/fileAdd.svg" alt="파일 첨부" />
         파일 첨부하기
         <S.InputFile type="file" />
       </S.Label>
